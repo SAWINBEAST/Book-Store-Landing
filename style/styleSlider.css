@@ -1,0 +1,68 @@
+
+/* Слайдер */
+.sliderHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1px solid grey;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.sliderDiv{
+    display: grid;
+    grid-template-columns: repeat(9, 8%);
+    justify-content:space-evenly;
+    margin: auto;
+    margin-top: 2rem;
+    justify-content:center;
+}
+
+.imgMini{
+    width: 3rem;
+    margin:5px;
+}
+
+/* аля-выборка популярных книг */
+.imgMini:nth-child(2n+1){   
+    display: none;
+}
+
+.imgMain{
+    margin: auto;
+    margin-top:1rem;
+    margin-bottom: 1rem; 
+    width: 15rem;
+    display:flex;
+    justify-content:center;
+}
+
+.photodiv{
+    margin:0;
+}
+
+.buttonDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    
+}
+
+button{
+    margin-top: 1%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    justify-content:center;
+}
+
+@media (max-width: 1024px){
+    .sliderDiv{
+        display:grid;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .imgMini{
+        width: 1.5rem;
+    }
+}

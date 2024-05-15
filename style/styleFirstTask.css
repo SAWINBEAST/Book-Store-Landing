@@ -1,0 +1,104 @@
+
+/* Задание 1 */
+.name{
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1{
+    margin: auto;
+    display: flex;
+    /* display:none; */
+    justify-content:center;    
+}
+
+.sortBtnDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.collection-Books {
+    display: grid;
+    grid-template-columns: repeat(2, 20%);
+    justify-content:space-evenly;
+    row-gap:50px;
+    overflow-y: scroll;
+    height: 530px;
+    margin:40px;
+    box-shadow: 1px 1px 3px rgb(11, 10, 10);
+
+}
+
+.books {
+    display: flex;
+    justify-content:center;
+    box-shadow: 1px 1px 7px rgb(11, 10, 10);
+    background-color: aliceblue;
+    box-sizing: content-box;
+    
+};
+
+.divBookInfo > .img-Book {
+    width: 100%;
+}
+
+.img-Book {
+    /* box-sizing: content-box; */
+    /* margin: 15px 5px 10px 5px; */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: 350px;
+    width: 100%;
+    object-fit:cover;
+};
+
+.ulBook .pText {
+    padding:  0 20px;
+}
+
+.divBookInfo { 
+ /* box-sizing: border-box; */
+ margin: 0px 10px 0px 10px;
+}
+
+.btn{
+    color: rgb(105, 105, 105);
+    border-color: rgb(105, 105, 105);
+}
+
+button {
+    margin-bottom: 30px;
+}
+
+.hide {
+    display: none;
+}
+
+
+@media (max-width: 1024px){
+    .collection-Books {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content:space-evenly;
+        gap:10px;
+        overflow: scroll;
+        height: 560px;
+        margin:40px;
+}
+/* .books{
+    align-items: center;
+} */
+
+.pText{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.img-Book{
+    object-fit:contain;
+}
+}
